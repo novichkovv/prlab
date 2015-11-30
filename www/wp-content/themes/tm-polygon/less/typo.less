@@ -1,0 +1,31 @@
+@import (reference) "_elements";
+
+/*--------------------------------------------
+Typo
+----------------------------------------------*/
+
+ul.style1 {
+	li {
+		margin-bottom: 10px;
+		list-style: none;
+		&:before {
+			content: "\f061";
+			.iconfont;
+			margin-right: 10px;
+		}
+	}
+}
+
+blockquote {
+	border-left-width: 2px;
+	border-left-color: #1674D1;
+	font-size: inherit;
+	&.blockquote-2 {
+		font-style: normal;
+	}
+	&.blockquote-3 {
+		background-color: #F5F5F5;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+}

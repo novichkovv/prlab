@@ -1,0 +1,124 @@
+@import (reference) "_elements";
+
+/*--------------------------------------------
+Sidebar
+----------------------------------------------*/
+.sidebar, .wpb_widgetised_column {
+  .widget {
+    margin-bottom: 40px;
+    .tagcloud {
+      a {
+        margin-right: 8px;
+        margin-bottom: 8px;
+        font-size: 14px;
+        color: #999;
+        border: 1px solid #eee;
+        padding: 10px 20px;
+        display: inline-block;
+        text-transform: capitalize;
+        font-size: 14px!important;
+        &:hover, &:focus {
+          border-color: #1674D1;
+          color: #1674D1;
+        }
+      }
+    }
+    .menu {
+      li {
+        margin: 0;
+        padding: 0;
+        border-bottom-color: #FFFFFF;
+        border-bottom-width: 2px;
+        &:hover, &.current-menu-item {
+          a {
+            background-color: #1674D1;
+            color: #fff;
+          }
+        }
+        a {
+          padding: 18px 20px;
+          display: block;
+          background-color: #F4F4F4;
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: 400;
+          color: #111;
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+  }
+  .widget-title {
+    line-height: 1;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #111;
+  }
+}
+.sidebar {
+  ul li:first-child {
+    border-top: 1px solid #EEEEEE;
+    padding-top: 10px;
+  }
+}
+.sidebar, .wpb_widgetised_column {
+  ul li, .recent-posts__item {
+    display: block;
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+  }
+  .recent-posts__item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .recent-posts > div:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.sidebar, .wpb_widgetised_column {
+  .widget_search {
+    .search-form {
+      position: relative;
+      margin-top: -20px;
+    }
+    span {
+      font-size: 0;
+      &:before {
+        content: "\f002";
+        .iconfont;
+        font-size: 16px;
+        position: absolute;
+        right: 1px;
+        top: 23px;
+        background-color: #EEEEEE;
+        text-align: center;
+        height: 47px;
+        line-height: 47px;
+        width: 48px;
+        display: block;
+      }
+    }
+    input[type="search"] {
+      border: 1px solid #DDDDDD;
+      background-color: #fff;
+      padding: 15px;
+      margin-bottom: 0;
+    }
+    .search-submit {
+      display: none;
+    }
+  }
+}
+.sidebar-contain {
+  padding-right: 0px;
+}

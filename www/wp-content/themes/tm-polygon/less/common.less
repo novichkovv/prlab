@@ -1,0 +1,103 @@
+@import (reference) "_elements";
+
+/*--------------------------------------------
+Combo CSS
+----------------------------------------------*/
+.clr {
+  .clearfix;
+}
+
+.icf {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+.icon7stroke {
+  font-family: 'Pe-icon-7-stroke';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+.tran {
+  .transition();
+}
+
+/*--------------------------------------------------------------
+Common
+--------------------------------------------------------------*/
+.boxed {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.tm-vc-row-overlay{
+  .absolute-center;
+  position: absolute !important;
+}
+
+.site {
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.align {
+  &-center {
+    text-align: center;
+  }
+  &-left {
+    text-align: left;
+  }
+  &-right {
+    text-align: right;
+  }
+}
+
+//.site-content {
+//  max-width: 1170px;
+//  margin: auto;
+//}
+
+.row, .container {
+  &:before, &:after {
+    display: none !important;
+  }
+}
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.box-center {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.inline-block {
+  display: inline-block;
+}
+#map-canvas img {
+  max-width: none;
+}

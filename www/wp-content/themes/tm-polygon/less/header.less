@@ -1,0 +1,241 @@
+@import (reference) "_elements";
+/*--------------------------------------------------------------
+Header
+--------------------------------------------------------------*/
+.admin-bar .sticky-menu.headroom--not-top {
+  @media @sm {
+    top: 32px;
+  }
+  @media @md {
+    top: 32px;
+  }
+  @media @xs-max {
+    top: 0px;
+  }
+}
+@media @md {
+  .sticky-menu.headroom--not-top {
+    position: fixed !important;
+    top: 0;
+    z-index: 9999 !important;
+    width: 100%;
+    box-shadow: 0 1px 1px #eee;
+    & .menu > li {
+      //padding-top: 30px!important;
+      //padding-bottom: 30px!important;
+    }
+    @media @md {
+      .site-branding {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+    .search-box .search-form {
+      top: 47px;
+    }
+  }
+}
+
+.header03 {
+  .primary-menu, .search-cart {
+    display: inline-block;
+    clear: none;
+    vertical-align: middle;
+  }
+  #site-navigation {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .sub-menu {
+    text-align: left;
+  }
+}
+.site-header {
+  position: relative;
+  .custom-logo {
+    background-repeat: no-repeat;
+    background-position: center center;
+    &, a {
+      font-size: 0;
+    }
+  }
+}
+.mobile-menu {
+  .custom-logo {
+    display: none;
+  }
+}
+.site-top {
+  width: 100%;
+  position: relative;
+  *[class*="pe-7s"], .fa {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -4px;
+  }
+}
+.absolute-menu {
+  .site-header {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+  }
+  .header-right {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.big-title, .big-title--single, .site-top {
+  .container {
+    position: relative;
+  }
+}
+.site-header, .big-title, .big-title--single, .site-top {
+  background-size: cover;
+  @media @lg {
+    & > .container:not(.nav_boxed), & > .sticky-menu > .container:not(.nav_boxed){
+      max-width: 100%;
+      margin-left: 105px;
+      margin-right: 105px;
+
+    }
+    & > .container.nav_boxed, & > .sticky-menu > .container.nav_boxed {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+.site-branding {
+  position: relative;
+  z-index: 1;
+  padding: 20px 15px;
+}
+
+.extra-info {
+  > div {
+    padding: 10px 15px;
+    text-align: left;
+  }
+  i {
+    display: inline-block;
+    font-size: 30px;
+    margin-bottom: 20px;
+    float: left;
+    margin-right: 15px;
+  }
+  span {
+    font-weight: 600;
+    color: #777;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: normal;
+    font-weight: normal;
+  }
+}
+
+.search-box {
+  position: relative;
+  z-index: 9999;
+  line-height: 1em;
+  text-align: left;
+  i {
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    height: 20px;
+    width: 20px;
+    .transit;
+    .transition-duration(0.1s);
+    &:before, &:after {
+      position: absolute;
+      color: #fff;
+      .icon7stroke;
+      .transit;
+    }
+    &:before {
+      top: 0;
+      left: 0;
+      font-size: 20px;
+    }
+    &:after {
+      content: "\e680";
+      top: 100%;
+      left: 0;
+      font-size: 25px;
+    }
+  }
+  label span, input[type="submit"] {
+    display: none;
+  }
+  input[type="search"] {
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    border: none;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 2px solid transparent;
+    .box_shadow(0, 6px, 12px, 0, rgba(0, 0, 0, 0.2));
+    .transit;
+  }
+  .search-form {
+    position: absolute;
+    right: 30px;
+    width: 300px;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    .transit;
+    &:before {
+      content: '';
+      .absolute-center;
+    }
+    &.open {
+      opacity: 1;
+      visibility: visible;
+      + i {
+        &:before {
+          top: -100%;
+        }
+        &:after {
+          top: 0;
+        }
+      }
+    }
+  }
+  @media @md-max {
+    width: 100%;
+  }
+}
+
+///////////////sm//////////////////
+@media @sm {
+  body {
+    color: #000;
+  }
+}
+
+///////////////md//////////////////
+@media @md {
+  .site-top {
+    .social-menu {
+      display: inline-block;
+      position: relative;
+      ul {
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+}
+
+///////////////lg//////////////////
+@media @lg {
+
+}

@@ -1,0 +1,13 @@
+[START=WIDGET LOGIC OPTIONS]
+widget_logic-options-filter	"checked"
+widget_logic-options-wp_reset_query	null
+widget_logic-options-load_point	"after_setup_theme"
+text-4	"!is_page(array(74176, 74179, 74182, 74185))"
+better-menu-widget-4	"is_page(array(74176, 74179, 74182, 74185))"
+text-3	"!is_page(array(74182, 74185))"
+text-6	"is_page(array(74182))"
+text-2	"!is_page(array(74182, 74185))"
+text-7	"is_page(array(74185))"
+tag_cloud-2	""
+archives-2	""
+[STOP=WIDGET LOGIC OPTIONS]
