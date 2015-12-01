@@ -1,5 +1,5 @@
-CREATE DATABASE  IF NOT EXISTS `plab` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `plab`;
+CREATE DATABASE  IF NOT EXISTS `prlab` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `prlab`;
 -- MySQL dump 10.13  Distrib 5.6.23, for Win32 (x86)
 --
 -- Host: 127.0.0.1    Database: plab
